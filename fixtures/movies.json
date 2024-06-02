@@ -1,0 +1,20 @@
+[
+{
+    "model": "filmy.movie",
+    "pk": 1,
+    "fields": {
+        "name": "The Dark Knight",
+        "year": 2008,
+        "footage": 152,
+        "description": "With the help of allies Lt. Jim Gordon (Gary Oldman) and DA Harvey Dent (Aaron Eckhart), Batman (Christian Bale) has been able to keep a tight lid on crime in Gotham City. But when a vile young criminal calling himself the Joker (Heath Ledger) suddenly throws the town into chaos, the caped Crusader begins to tread a fine line between heroism and vigilantism.",
+        "main_picture": "e9a43e647b2ca70e75a3c0af046c4dfdcd712380889779cbdc2c57d94ab63902.jpg",
+        "director": 2,
+        "actors": [
+            1
+        ],
+        "genres": [
+            1
+        ]
+    }
+}
+]

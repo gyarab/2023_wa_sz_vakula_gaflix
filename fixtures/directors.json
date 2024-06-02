@@ -1,0 +1,22 @@
+[
+{
+    "model": "filmy.director",
+    "pk": 1,
+    "fields": {
+        "name": "Quentin Tarantino",
+        "birth_year": 61,
+        "description": "Quentin Jerome Tarantino je americký filmový režisér, scenárista a herec, který zaèátkem devadesátých let proslul jako svìží, drsný i èernohumorný vypravìè, který vnesl do tradièních amerických archetypù nový život. Svoji filmovou kariéru zaèínal jako uvadìè v kinì. Nìjaký èas byl i uvadìèem v pornokinì.",
+        "main_picture": "tarantino.png"
+    }
+},
+{
+    "model": "filmy.director",
+    "pk": 2,
+    "fields": {
+        "name": "Christopher Nolan",
+        "birth_year": 53,
+        "description": "Christopher Edward Nolan je americko-britský režisér a scenárista. Debutoval v roce 1997 krátkometrážním filmem Doodlebug. Zvuèné jméno v Hollywoodu mu zajistily snímky Sledování, Memento, Insomnie, Interstellar nebo Tenet.",
+        "main_picture": "krystofNolan.png"
+    }
+}
+]

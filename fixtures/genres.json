@@ -1,0 +1,16 @@
+[
+{
+    "model": "filmy.genre",
+    "pk": 1,
+    "fields": {
+        "name": "Action"
+    }
+},
+{
+    "model": "filmy.genre",
+    "pk": 2,
+    "fields": {
+        "name": "Sci-Fi"
+    }
+}
+]
