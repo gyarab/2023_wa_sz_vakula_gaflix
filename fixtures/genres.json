@@ -1,16 +1,1 @@
-[
-{
-    "model": "filmy.genre",
-    "pk": 1,
-    "fields": {
-        "name": "Action"
-    }
-},
-{
-    "model": "filmy.genre",
-    "pk": 2,
-    "fields": {
-        "name": "Sci-Fi"
-    }
-}
-]
+[{"model": "filmy.genre", "pk": 1, "fields": {"name": "Action"}}, {"model": "filmy.genre", "pk": 2, "fields": {"name": "Sci-fi"}}, {"model": "filmy.genre", "pk": 3, "fields": {"name": "Documentary"}}, {"model": "filmy.genre", "pk": 4, "fields": {"name": "Historical"}}, {"model": "filmy.genre", "pk": 5, "fields": {"name": "Fantasy"}}]
