@@ -5,7 +5,7 @@
     "fields": {
         "name": "Quentin Tarantino",
         "birth_year": 61,
-        "description": "Quentin Jerome Tarantino je americkı filmovı reisér, scenárista a herec, kterı zaèátkem devadesátıch let proslul jako svìí, drsnı i èernohumornı vypravìè, kterı vnesl do tradièních americkıch archetypù novı ivot. Svoji filmovou kariéru zaèínal jako uvadìè v kinì. Nìjakı èas byl i uvadìèem v pornokinì.",
+        "description": "Quentin Jerome Tarantino je americkÃ½ filmovÃ½ reÅ¾iser, scenÃ¡rista a herec, kterÃ½ zaÄÃ¡tkem devadesÃ¡tÃ½ch let proslul jako drsnÃ½ i ÄernohumornÃ½ vypravÄ›Ä, kterÃ½ vnesl do tradiÄnÃ­ch americkÃ½ch archetypy novÃ½ Å¾ivot. Svoji filmovou kariÃ©ru zaÄÃ­nal jako uvadÄ›Ä v kinÄ›. NÄ›jaky Äas byl i uvadÄ›Äem v pornokinÄ›.",
         "main_picture": "tarantino.png"
     }
 },
@@ -15,7 +15,7 @@
     "fields": {
         "name": "Christopher Nolan",
         "birth_year": 53,
-        "description": "Christopher Edward Nolan je americko-britskı reisér a scenárista. Debutoval v roce 1997 krátkometráním filmem Doodlebug. Zvuèné jméno v Hollywoodu mu zajistily snímky Sledování, Memento, Insomnie, Interstellar nebo Tenet.",
+        "description": "Christopher Edward Nolan je americko-britskÃ½ reÅ¾isÃ©r a scenÃ¡rista. Debutoval v roce 1997 krxtkometrxnxm filmem Doodlebug. Zvuxnx jmxno v Hollywoodu mu zajistily snxmky Sledovxnx, Memento, Insomnie, Interstellar nebo Tenet.",
         "main_picture": "krystofNolan.png"
     }
 }
