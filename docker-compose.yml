@@ -1,0 +1,47 @@
+version: "3.3"
+services:
+  web:
+    restart: unless-stopped
+    build: .
+    pull_policy: build
+    # ports:
+    #   - 8000:80
+    volumes:
+      - ./app:/app
+
+    labels:
+      - "traefik.enable=true"
+
+      - "traefik.http.routers.wa-mv1-http.rule=Host(`mv1.wa.dtcloud.cz`)"
+      - "traefik.http.routers.wa-mv1-http.entrypoints=web"
+      - "traefik.http.routers.wa-mv1-http.middlewares=wa-mv1-redirect-https@docker"
+
+      - "traefik.http.middlewares.wa-mv1-redirect-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.wa-mv1-redirect-https.redirectscheme.permanent=true"
+
+      - "traefik.http.routers.wa-mv1-https.rule=Host(`mv1.wa.dtcloud.cz`)"
+      - "traefik.http.routers.wa-mv1-https.entrypoints=websecure"
+      - "traefik.http.routers.wa-mv1-https.tls=true"
+      - "traefik.http.routers.wa-mv1-https.tls.certresolver=letsencrypt"
+
+  static:
+    image: nginx:alpine
+    restart: unless-stopped
+
+    volumes:
+      - ./app/static:/usr/share/nginx/html/static:ro
+
+    labels:
+      - "traefik.enable=true"
+
+      - "traefik.http.routers.wa-mv1-static-http.rule=Host(`mv1.wa.dtcloud.cz`) && PathPrefix(`/static`)"
+      - "traefik.http.routers.wa-mv1-static-http.entrypoints=web"
+      - "traefik.http.routers.wa-mv1-static-http.middlewares=wa-mv1-static-redirect-https@docker"
+
+      - "traefik.http.middlewares.wa-mv1-static-redirect-https.redirectscheme.scheme=https"
+      - "traefik.http.middlewares.wa-mv1-static-redirect-https.redirectscheme.permanent=true"
+
+      - "traefik.http.routers.wa-mv1-static-https.rule=Host(`mv1.wa.dtcloud.cz`) && PathPrefix(`/static`)"
+      - "traefik.http.routers.wa-mv1-static-https.entrypoints=websecure"
+      - "traefik.http.routers.wa-mv1-static-https.tls=true"
+      - "traefik.http.routers.wa-mv1-static-https.tls.certresolver=letsencrypt"
